@@ -50,9 +50,9 @@ VIDEO_DIR.mkdir(exist_ok=True)
 
 # Emotion prompts
 EMOTION_PROMPTS = {
-    "happy": "The subject is happy and jumping JOYFULLY",
-    "sad": "The subject is CRYING VERY MUCH and is in AGONY, TEARS rolling out",
-    "angry": "The subject is EXTREMELY angry and is looking for a fight"
+    "happy": "The subject is happy and jumping JOYFULLY with a BRIGHT happy environment",
+    "sad": "The subject is CRYING VERY MUCH and is in AGONY, TEARS rolling out, the environment is DIFFERENT with a SAD tone. The subject should be CRYING with TEARS ROLLING DOWN UNCONDITIONALLY!!!",
+    "angry": "The subject is EXTREMELY angry and is READY to fight, by THROWING it's hands. There's FIRE everywhere in the surrounding and it's EYES are glowing in FLAMES!!!"
 }
 
 # Default video configuration
