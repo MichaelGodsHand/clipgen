@@ -58,7 +58,7 @@ EMOTION_PROMPTS = {
 # Default video configuration
 DEFAULT_CONFIG = {
     "resolution": "480p",
-    "aspect_ratio": "16:9",
+    "aspect_ratio": "1:1",  # Square video
     "num_frames": 81,
     "frames_per_second": 16
 }
@@ -129,7 +129,7 @@ def generate_video(image_url: str, emotion: str, config: dict, job_id: str) -> d
         "prompt": EMOTION_PROMPTS[emotion],
         "num_frames": config.get("num_frames", 81),
         "resolution": config.get("resolution", "480p"),
-        "aspect_ratio": config.get("aspect_ratio", "16:9"),
+        "aspect_ratio": config.get("aspect_ratio", "1:1"),
         "frames_per_second": config.get("frames_per_second", 16),
         "sample_shift": 12,
         "high_noise_lora_scale": 1,
